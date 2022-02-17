@@ -30,20 +30,24 @@ def searchValue(startIndex,endIndex):
     smallestValueIndex = np.where(dataValue[startIndex:endIndex] == smallestValue)[0] + startIndex + 1
     return greatestValue,smallestValue,greatestValueIndex,smallestValueIndex
     
+#en büyük ve en küçük değerlerin indexine göre tarihi bulma
+def searchDate(greatestValueIndex,smallestValueIndex):
+    for index in greatestValueIndex:
+        index -= 1
+        greatestValueDates.append(dataDate[int(index)]) 
+    for index in smallestValueIndex:
+        index -= 1
+        smallestValueDates.append(dataDate[int(index)])
 
 
+#run
 startIndex,endIndex = searcIndex(startDate,stopDate)
 greatestValue,smallestValue,greatestValueIndex,smallestValueIndex = searchValue(startIndex,endIndex)
+searchDate(greatestValueIndex,smallestValueIndex)
 
+ 
 
-for index in greatestValueIndex:
-    index -= 1
-    greatestValueDates.append(dataDate[int(index)]) 
-for index in smallestValueIndex:
-    index -= 1
-    smallestValueDates.append(dataDate[int(index)]) 
-
-
+#print
 print('Toplam  "',endIndex-startIndex+1,'"  Adet Sayı Vardır')
 print('\n----------------------------------------------------------------------------\n')
 print('İki Tarih Arasındaki En Büyük sayı : ',greatestValue,'\nIndex Bilgisi-leri : ',greatestValueIndex,'\nTam Tarih-ler : ',greatestValueDates, '\nGün-ler Sırayla :',pd.to_datetime(greatestValueDates).day)
