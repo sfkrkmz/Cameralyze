@@ -5,7 +5,8 @@
 
 ### Tarih kontrolü yapılmadığından
 
-Tarih aralığı min = '2021-01-01' girilebilir
+Tarih aralığı min = '2021-01-01' girilebilir,
+
 Tarih aralığı max = '2021-06-30' girilebilir
 
 ### Aksi takdirde hata alıcaktır.
