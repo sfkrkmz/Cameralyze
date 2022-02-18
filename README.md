@@ -11,4 +11,4 @@ Tarih aralığı max = '2021-06-30' girilebilir
 
 ### Aksi takdirde hata alıcaktır.
 
-Indexler buradaki excell dosyasına göre referans alınmalıdır.
+Indexler https://docs.google.com/spreadsheets/d/1HQZ83C51LPMY_O8Y95dGQ4pWHuLnPBmb/edit?usp=sharing&ouid=100308324885918324136&rtpof=true&sd=true excell dosyasına göre referans alınmalıdır.
